@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media screen and (max-width: 700px)
+{
+    .photo
+    {
+        margin:auto;
+        width: 90px;
+        margin-top: 15px;
+    }
+    h1
+    {
+        font-size: 1.5em;
+    }
+    h2
+    {
+        font-size: 1em;
+        font-weight: normal;
+    }
+    .lieu
+    {
+        font-size: 0.9em;
+    }
+    .introduction
+    {
+        font-size: 1.2em;
+    }
+    body
+    {
+        background-image: url("image/background2.jpg");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+    }
+    ul.timeline > li {
+        margin: 30px 0;
+        padding-left: 31px;
+    }
+}
+@media screen and (min-width: 700px)
+{
+    .photo
+    {           
+        transform:translateX(5px);
+        width: 120px;
+    }
+
+    .introduction
+    {
+    text-align:left;
+    font-size: 4vh;
+    }
+    h2
+    {
+        font-size: 1.6em ;
+        font-weight: normal;
+    }
+    body
+    {
+        background-image: url("image/background4.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+    }
+    ul.timeline > li {
+        margin: 30px 0;
+        padding-left: 45px;
+    }
+}   
+body
+{
+    font-family: 'Roboto' , sans-serif;
+}
+
+.lieu
+{
+    text-shadow: #d62f2f96 0px 0px 3px;
+}
+.buttonMail
+{   
+    border-radius: 10px;
+    position:absolute; 
+}
+.buttonMail:hover
+{
+    border-radius: 10px;
+    border: 5px solid black;
+    background-color: #FFEE00;
+    color: black;
+    transition: 0.5s;
+    font-weight: bold;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);   
+}
+.head
+{
+    list-style-type: none;
+    margin-left: -25px;
+    margin-top: 15px;
+    color : #D62F2F;
+}
+.github:hover
+{
+    color:#FFEE00;    
+    border-radius: 15px;
+    background-color: black;
+    border: 7px solid black;
+    transition: 0.8s;
+    transform: rotate(360deg);
+}
+.linkedin:hover
+{
+    color:#FFEE00;    
+    border-radius: 15px;
+    background-color: black;
+    border: 7px solid black;
+    transition: 0.8s;
+    transform: rotate(360deg);
+}
+.contact:hover
+{    
+    color:#FFEE00;    
+    border-radius: 15px;
+    background-color: black;
+    border: 7px solid black;
+    transition: 0.8s;
+    transform: rotate(-360deg);  
+}
+.photo
+{
+   border-radius: 20px;
+   box-shadow:
+   0 0px 15px -6px rgba(0, 0, 0, 0.011),
+   0 0px 20.4px -6px rgba(0, 0, 0, 0.035),
+   0 0px 24.6px -6px rgba(0, 0, 0, 0.074),
+   0 0px 30.5px -6px rgba(0, 0, 0, 0.141),
+   0 0px 50px -6px rgba(0, 0, 0, 0.37); 
+}
+section
+{
+    border: 3px solid black;
+}
+.introstyle
+{
+    color:#D62F2F;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.712);
+}
+.icon
+{
+    color:#D62F2F;
+    font-size: 1.3em;
+}
+.icon:hover
+{
+    color:#FFEE00;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+/* Formation */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: '';
+    /* background: #D2C0B9;*/
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    left: 14px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+}
+
+.timeline_puce {
+    content: 'test';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 100%;
+    border: 3px solid #D62F2F;
+    left: -10px;
+    width: 3.4rem;
+    height: 3.4rem;
+    z-index: 400;
+    text-align: center;
+}
+.timeline_puce > .date {
+    font-weight: bold;
+    position: relative;
+    top: 12px;
+}
+section .timeline>li
+{
+    margin-top: 20px;
+}
+.timeline_content
+{
+    padding-top:10px;
+    margin-bottom: 20px;
+}
+.skill
+{
+  border: 2px solid #91817a;
+  border-radius: 15px;
+}
+.skill>h4
+{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.skill i
+{
+    margin-right: 10px;
+}
+.skill li
+{
+    padding-left: 20px;
+    list-style-position: inside;
+}
