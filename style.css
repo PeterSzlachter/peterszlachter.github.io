@@ -7,6 +7,9 @@
         margin:auto;
         width: 90px;
         margin-top: 15px;
+        position: relative;
+        top: 0;
+        left:20px; 
     }
     h1
     {
@@ -37,23 +40,30 @@
         margin: 30px 0;
         padding-left: 31px;
     }
+    .skill:nth-child(2)
+    {
+        margin-top: 0.5em;
+    }
 }
 @media screen and (min-width: 700px)
 {
     .photo
-    {           
-        transform:translateX(5px);
+    {   
         width: 120px;
+        position: relative;
+        top: 0;
+        left:90px; 
     }
 
     .introduction
     {
     text-align:left;
     font-size: 4vh;
+    margin: 45px 0px 25px 0px;
     }
     h2
     {
-        font-size: 1.6em ;
+        font-size: 1.4em ;
         font-weight: normal;
     }
     body
@@ -67,6 +77,14 @@
     ul.timeline > li {
         margin: 30px 0;
         padding-left: 45px;
+    }
+    .lieu
+    {
+        font-size: 1.2em;
+    }
+    h1
+    {
+        font-size: 3em;
     }
 }   
 body
@@ -100,7 +118,10 @@ body
     list-style-type: none;
     margin-left: -25px;
     margin-top: 15px;
-    color : #D62F2F;
+}
+.head i
+{
+    color:#D62F2F;
 }
 .github:hover
 {
@@ -138,6 +159,7 @@ body
    0 0px 24.6px -6px rgba(0, 0, 0, 0.074),
    0 0px 30.5px -6px rgba(0, 0, 0, 0.141),
    0 0px 50px -6px rgba(0, 0, 0, 0.37); 
+  
 }
 section
 {
