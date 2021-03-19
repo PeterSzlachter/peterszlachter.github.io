@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@media screen and (max-width: 700px) /* Mobile */
+
+@media screen and (max-width: 900px) /* Mobile and tablet */
 {
     .photo
     {
@@ -9,7 +10,7 @@
         margin-top: 15px;
         position: relative;
         top: 0;
-        left:20px; 
+        left:10px; 
     }
     h1
     {
@@ -28,14 +29,38 @@
     {
         font-size: 1.2em;
     }
-     body
+      body
     {
-        background-image: url("image/background2.jpg");
         background-size: cover;
-        background-position: top;
+        background-position: center center;
         background-repeat: no-repeat;
-        background-attachment:fixed;
+        background-attachment: fixed;
+        z-index: -2;
+    } 
+    body
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        z-index: 0;
     }
+    body::after
+    {
+        content:"";
+        background-image: url("image/jess-bailey-TUg2C1bEq9w-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+        background-attachment: fixed;
+        opacity:0.4;
+        top: 0;
+        left: 0;
+        bottom:0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    } 
  
     ul.timeline > li {
         margin: 30px 0;
@@ -53,8 +78,16 @@
     {
         margin-top: 10px;
     }
+    .arrow
+    {
+    display:none;
+    }
+
+    header {height:100vh;}
+    .header{align-content: center;}
+
 }
-@media screen and (min-width: 700px) /* laptop and tablet */
+@media screen and (min-width: 901px) /* laptop */
 {
     .photo
     {   
@@ -79,8 +112,8 @@
 
     .introduction
     {
-    text-align:left;
-    font-size: 4vh;
+    text-align:start;
+    font-size: 2.4em;
     margin: 45px 0px 25px 0px;
     }
     h2
@@ -99,19 +132,18 @@
     body::after
     {
         content:"";
-        background-image: url("image/background.jpg");
+        background-image: url("image/jess-bailey-TUg2C1bEq9w-unsplash.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        opacity:0.4;
+        opacity:0.5;
         top: 0;
         left: 0;
         bottom:0;
         right: 0;
         position: absolute;
-        z-index: -1;
-        filter:saturate(9);
-        filter:grayscale(1)
+        z-index: -2;
+        filter:grayscale(0.6);
     } 
     ul.timeline > li {
         margin: 30px 0;
@@ -134,17 +166,29 @@
     {
     height: 100vh;
     position:relative;
-    top:15vh;
+    z-index:-1;
+    }
+    .header 
+    {
+        position:relative;
+        top:15vh;
     }
     .arrow
     {
     transform: rotate(140deg);
     width : 140px;
-    height: 300px;
-    margin: auto;
+    height: 150px;
+
+    }
+
+    header .top-link { 
+        
+    text-align: center;
+    display: block;
     position: relative;
-    top:100px;
-    right:100px;
+    top:10vmin;
+    
+
     }
 }   
 body
@@ -161,18 +205,21 @@ body
     border-radius: 10px;
     position:absolute; 
     margin-top:5vh;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); 
 }
 .buttonMail:hover
 {
     border-radius: 10px;
     border: 5px solid black;
-    background-color: #FFEE00;
+    background-color: #AAF3E8;
     color: black;
     transition: 0.5s;
     font-weight: bold;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);   
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);   
 }
 .head
 {
@@ -313,4 +360,3 @@ section .timeline>li
     list-style-type: none;
     margin-left: 35px;
 }
-
