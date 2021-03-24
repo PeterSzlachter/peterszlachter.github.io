@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 @media screen and (max-width: 900px) /* Mobile and tablet */
 {
-    .photo
+    .photo /* photo CV */
     {
         margin:auto;
         width: 90px;
         margin-top: 15px;
         position: relative;
         top: 0;
-        left:10px; 
+        left:30px; 
     }
     h1
     {
@@ -21,6 +22,10 @@
         font-size: 1em;
         font-weight: normal;
     }
+    h3
+    {
+        margin-bottom: 35px;
+    }
     .lieu
     {
         font-size: 0.9em;
@@ -29,14 +34,7 @@
     {
         font-size: 1.2em;
     }
-      body
-    {
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        z-index: -2;
-    } 
+
     body
     {
         width: 100%;
@@ -48,19 +46,20 @@
     body::after
     {
         content:"";
-        background-image: url("image/jess-bailey-TUg2C1bEq9w-unsplash.jpg");
+        background-image: url("image/laura-adai--KlC1a48kFE-unsplash.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center center ;
+        background-position: center center;
         background-attachment: fixed;
-        opacity:0.4;
+        opacity:0.3;
         top: 0;
         left: 0;
         bottom:0;
         right: 0;
         position: absolute;
-        z-index: -1;
-    } 
+        z-index: -2;
+        filter:grayscale(1);
+    }  
  
     ul.timeline > li {
         margin: 30px 0;
@@ -70,10 +69,6 @@
     {
         margin-top: 0.5em;
     }
-    h3
-    {
-        margin-bottom: 35px;
-    }
     .skill-title
     {
         margin-top: 10px;
@@ -82,10 +77,18 @@
     {
     display:none;
     }
-
-    header {height:100vh;}
-    .header{align-content: center;}
-
+    header 
+    {
+    height: 100vh;
+    position:relative;
+    z-index:-1;
+    }
+    .timeline_content h4
+    {
+    transform: translate(10px);
+    margin-bottom: 25px;
+    }
+    .skill-list{ transform: translate(-30px);}
 }
 @media screen and (min-width: 901px) /* laptop */
 {
@@ -132,18 +135,18 @@
     body::after
     {
         content:"";
-        background-image: url("image/jess-bailey-TUg2C1bEq9w-unsplash.jpg");
+        background-image: url("https://images.unsplash.com/photo-1616518956098-8e73c8aac002?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        opacity:0.5;
+        opacity:0.2;
         top: 0;
         left: 0;
         bottom:0;
         right: 0;
         position: absolute;
         z-index: -2;
-        filter:grayscale(0.6);
+        filter:grayscale(0.2);
     } 
     ul.timeline > li {
         margin: 30px 0;
@@ -160,7 +163,7 @@
     h3
     {
         margin-bottom: 50px;
-        font-size:1.9em;
+        font-size:2.2em;
     }
     header 
     {
@@ -178,22 +181,27 @@
     transform: rotate(140deg);
     width : 140px;
     height: 150px;
-
     }
-
     header .top-link { 
         
     text-align: center;
     display: block;
     position: relative;
-    top:10vmin;
-    
-
+    top:10vh;   
     }
-}   
+    .experience ul { margin-left: 45px;}
+    .timeline_content p {margin-left:40px; }
+}  
+ 
 body
 {
     font-family: 'Roboto' , sans-serif;
+}
+h3 {font-family: 'Nunito', sans-serif; font-weight: 700;}
+h1
+{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
 }
 
 .lieu
@@ -208,13 +216,14 @@ body
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); 
+    z-index: 2;
 }
 .buttonMail:hover
 {
     border-radius: 10px;
     border: 5px solid black;
-    background-color: #AAF3E8;
     color: black;
+    background-color: white;
     transition: 0.5s;
     font-weight: bold;
     -webkit-transform: scale(1.4);
@@ -233,7 +242,7 @@ body
 }
 .github:hover
 {
-    color:#FFEE00;    
+    color:white;    
     border-radius: 15px;
     background-color: black;
     border: 7px solid black;
@@ -242,7 +251,7 @@ body
 }
 .linkedin:hover
 {
-    color:#FFEE00;    
+    color:white;    
     border-radius: 15px;
     background-color: black;
     border: 7px solid black;
@@ -251,7 +260,7 @@ body
 }
 .contact:hover
 {    
-    color:#FFEE00;    
+    color:white;    
     border-radius: 15px;
     background-color: black;
     border: 7px solid black;
@@ -293,7 +302,7 @@ ul.timeline {
 }
 ul.timeline:before {
     content: '';
-    /* background: #D2C0B9;*/
+    background: #D2C0B9;
     background-color: black;
     display: inline-block;
     position: absolute;
@@ -330,9 +339,17 @@ section .timeline>li
     padding-top:10px;
     margin-bottom: 20px;
 }
+.timeline_content > ul, .skill-info
+{
+    list-style-type: none;
+}
+.timeline_content p
+{
+    width:100%;
+}
 .skill
 {
-  border: 2px solid #91817a;
+  border: 5px double #91817a;
   border-radius: 15px;
 }
 .skill>h4
@@ -349,14 +366,31 @@ section .timeline>li
     padding-left: 20px;
     list-style-position: inside;
 }
-
+div > .exp
+{
+    margin-top: 10px;
+}
 .exp-date
 {
     line-height: 0.4em;
     font-style: italic;
+    margin-bottom: 30px;
+}
+.experience-bloc ul 
+{
+    margin-bottom: 25px;
 }
 .experience ul
 {
     list-style-type: none;
-    margin-left: 35px;
 }
+.skill-list > li::before
+{
+    content:"\2B9E";
+    margin-right: 0.5em;   
+}
+.skill-info > li::before
+{
+    margin-right: 0.5em;
+}
+section:nth-child(4), section:nth-child(3) {border-top : 3px double black;}

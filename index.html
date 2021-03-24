@@ -13,7 +13,7 @@
     <title>Peter Szlachter</title>
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
     <header>
         <div class="header container-fluid">
             <div class="row">
@@ -30,7 +30,7 @@
                             <div class="col-md-2 col-sm-2">
                                 <img src="image/PhotoCV.jpg" class="photo img-fluid" />
                             </div>
-                            <div class="col-md-9 col-sm-10 offset-md-1">
+                            <div class="col-md-9 offset-md-1">
                                 <h1>Peter Szlachter</h1>
                                 <h2>Apprenti développeur Web</h2>
                                 <p class="lieu"><i class="fas fa-map-marker-alt" style="color :red; margin-right: 5px; text-shadow:none;"></i>Paris, France</p>
@@ -46,14 +46,13 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mb-2">
-                    <a class="buttonMail btn btn-danger" type="button" href="mailto:peterszlachter@gmail.com"><i class="far fa-envelope fa-lg"></i> Contactez moi !</i></a>
+                    <a class="buttonMail btn btn-danger" type="button" href="mailto:peterszlachter@gmail.com"><i class="far fa-envelope"></i> Contactez moi !</i></a>
+                </div>
+                <div class="d-flex justify-content-center mt-5 position-absolute top-100 end-0">
+                    <p class="top-link "><a href="#skill-ancre"><img src="image/noun_Arrow_682712.svg"  class="arrow" /></a></p> 
                 </div>
                 
-                    <p class="top-link"><a href="#skill-ancre"><img src="image/noun_Arrow_682712.svg"  class="arrow" /></a></p>  
-                
             </div>
- 
- 
 
         </div>
     </header>
@@ -71,11 +70,12 @@
                 </ul>
             </div>
             <div class="skill col-md-5 mx-auto">
-                <h4><i class="fas fa-code"></i>Développement .NET</h4>
+                <h4><i class="fas fa-briefcase"></i>Environnement</h4>
                 <ul>
-                    <li>C#</li>
-                    <li>Programmation orientée objet</li>
-                    <li>Client lourd / Client léger</li>
+                    <li>Visual Studio Code</li>
+                    <li>Microsoft Visual Studio</li>
+                    <li>Microsoft SQL Server</li>
+                    <li>Merise</li>
                 </ul>
             </div>
             <div class="skill col-md-5 mx-auto mt-2">
@@ -86,67 +86,73 @@
                 </ul>
             </div>
             <div class="skill col-md-5 mx-auto mt-2">
-                <h4><i class="fas fa-briefcase"></i>Développement Back-end</h4>
+                <h4><i class="fas fa-code"></i>Développement .NET</h4>
                 <ul>
-                    <li>SQL</li>
-                    <li>Node.JS</li>
-                    <li>C</li>
+                    <li>C#</li>
+                    <li>Programmation orientée objet</li>
+                    <li>Client lourd / Client léger</li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class=" container-fluid">
-        <div class="container my-5">
+    <section>
+        <div class="container-fluid my-5">
             <div class="row">
-                <div class="education col-md-12">
+                <div class="education col-md-9 offset-md-2">
                     <h3 class="education-title">Formation</h3>
                     <ul class="container timeline">
                         <li>
                             <div class="timeline_puce me-4"><span class="date">2021</span></div>
                             <div class="timeline_content">
                                 <h4>Concepteur Développeur d'Application - La Manu - Versailles</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                                    nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis
-                                    sagittis ligula in sodales vehicula....</p>
+                                <ul class="skill-list">
+                                    <li>Consolider les langages : HTML, CSS, JS, PHP, MySQL, Merise, UML</li>
+                                    <li>Prise en main de frameworks PHP : CodeIgniter, Lumen, Laravel</li>
+                                    <li>Apprendre le développement mobile multiplateforme : HTML/CSS, Javascript, REACT Native</li>
+                                    <li>Création et déploiement d’une API</li>
+                                    <ul class="skill-info"><li><i class="fas fa-long-arrow-alt-right fa-lg me-2"></i>Plus d'informations à propos de cette formation sur le site de <a href="https://lamanu.fr/formations/formation-concepteur-developpeur-applications/">La Manu</a></li></ul>
+                                </ul>
                             </div>
                         </li>
                         <li>
                             <div class="timeline_puce"><span class="date">2021</span></div>
                             <div class="timeline_content">
                                 <h4>Formation Développeur .NET - La Manu - Versailles</h4>
-                                <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque
-                                    felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+                                <ul class="skill-list">
+                                    <li>Le C#</li>
+                                    <li>Les langages du Web : HTML/CSS, Bootstrap, JavaScript, jQuery</li>
+                                    <li>Connaître et savoir mettre en œuvre les méthodes agiles (Scrum)</li>
+                                    <li>Maîtriser l’utilisation des bases de données</li>
+                                    <ul class="skill-info"><li><i class="fas fa-long-arrow-alt-right fa-lg me-2"></i>Plus d'informations à propos de cette formation sur le site de <a href="https://lamanu.fr/formation-poec-developpeur-net/">La Manu</a></li></ul>
+                                </ul>
                             </div>
                         </li>
                         <li>
                             <div class="timeline_puce"><span class="date">2020</span></div>
                             <div class="timeline_content">
                                 <h4>Licence 3 Physique E3A - Université Paris-Saclay - Orsay</h4>
-                                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae
-                                    nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                <p>Parcours E3A : Electronique, Energie Electronique, Automatique</p>
                             </div>
                         </li>
                         <li>
                             <div class="timeline_puce"><span class="date">2018</span></div>
                             <div class="timeline_content">
                                 <h4>Première année cycle d'ingénieur - EPF - Montpellier</h4>
-                                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae
-                                    nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                <p>Ecole d'ingénieur - Parcours généraliste</p>
                             </div>
                         </li>
                         <li>
                             <div class="timeline_puce"><span class="date">2017</span></div>
                             <div class="timeline_content">
                                 <h4>Classe préparatoire école d'ingénieur - EPF - Montpellier</h4>
-                                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae
-                                    nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                <p>Classe préparatoire Ecole d'ingénieur - Parcours généraliste</p>
                             </div>
                         </li>
                         <li>
                             <div class="timeline_puce"><span class="date">2014</span></div>
                             <div class="timeline_content">
                                 <h4>Baccalauréat STI2D - Lycée Saint-Nicolas - Paris 6</h4>
-                                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                <p>Baccalauréat STI2D : Sciences et techniques de l'industrie et du développement durable - Spécialité Energie Environnement</p>
                             </div>
                         </li>
                     </ul>
@@ -154,35 +160,41 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section>
         <div class="container-fluid my-5">
             <div class="row">
-                <div class="experience col-md-12">
+                <div class="experience col-md-9 offset-md-2">
                     <h3 class="experience-title">Expérience</h3>
-                    <ul class="container-fluid timeline2">
+                    <ul class="container-fluid">
                         <li>
-                            <div>
+                            <div class="experience-bloc">
                                 <h4 class="exp">Hôte d'accueil - Forest-Hill Aquaboulevard - Paris 15</h4>
                                 <p class="exp-date">2016-2020</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                                    nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis
-                                    sagittis ligula in sodales vehicula....</p>
+                                <ul class="skill-list">
+                                    <li>Accueil et orientation des clients en français et en anglais</li>
+                                    <li>Vente de billets en période estivale</li>
+                                    <li>Gestion des sports de raquette : Réservations, vente de matériel et
+                                        d’abonnement</li>
+                                </ul>
                             </div>
                         </li>
                         <li>
-                            <div>
+                            <div class="experience-bloc">
                                 <h4 class="exp">Bénévole aide aux devoirs - Association Alizé - Montpellier</h4>
                                 <p class="exp-date">2014-2016</p>
-                                <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque
-                                    felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+                                <ul class="skill-list">
+                                    <li> Aide personnalisée pour des jeunes collégiens en zone d’enseignement prioritaire</li>
+                                </ul>
                             </div>
                         </li>
                         <li>
-                            <div>
+                            <div class="experience-bloc">
                                 <h4 class="exp">Equipier/Cafetier - Hôtel Lyric**** - Paris 2</h4>
                                 <p class="exp-date">2015</p>
-                                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae
-                                    nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                <ul class="skill-list">
+                                    <li>Service cafétéria (Contact avec les clients et tâches ménagères)</li>
+                                    <li>Service des étages (Responsable du contrôle des chambres)</li>
+                                </ul>
                             </div>
                         </li>
                     </ul>
@@ -191,7 +203,7 @@
         </div>
     </section>
 
-    <footer class="mt-auto py-3">
+    <footer class="py-md-3">
         <div class="container d-flex justify-content-evenly">
             <a target="_blank" href="https://www.linkedin.com/in/peter-szlachter/"><i class="icon fab fa-linkedin"></i></a>
             <a target="_blank" href="https://codepen.io/PytSz"><i class="icon fab fa-codepen"></i></a>
