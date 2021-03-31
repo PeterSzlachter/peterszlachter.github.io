@@ -4,6 +4,11 @@
 
 @media screen and (max-width: 900px) /* Mobile and tablet */
 {
+    .skill-list > li::before
+    {
+    content:"\27A4";
+    margin-right: 0.5em;   
+    }
     .photo /* photo CV */
     {
         margin:auto;
@@ -92,6 +97,11 @@
 }
 @media screen and (min-width: 901px) /* laptop */
 {
+    .skill-list > li::before
+    {
+    content:"\2B9E";
+    margin-right: 0.5em;   
+    }
     .photo
     {   
         width: 120px;
@@ -290,7 +300,7 @@ h1
 }
 .icon:hover
 {
-    color:#FFEE00;
+    color:#000000;
     transform: rotate(360deg);
     transition: 1s;
 }
@@ -384,11 +394,7 @@ div > .exp
 {
     list-style-type: none;
 }
-.skill-list > li::before
-{
-    content:"\2B9E";
-    margin-right: 0.5em;   
-}
+
 .skill-info > li::before
 {
     margin-right: 0.5em;
