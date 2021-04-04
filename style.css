@@ -6,7 +6,7 @@
 {
     .skill-list > li::before
     {
-    content:"\2B9A";
+    content:"\27A4";
     margin-right: 0.5em;   
     }
     .photo /* photo CV */
