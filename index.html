@@ -1,232 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-		integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
-	<link rel="stylesheet" href="style.css" />
-	<title>Peter Szlachter</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="style/style.css"/>
 </head>
-
 <body>
-	<header>
-		<div class="header container-fluid">
-			<div class="row">
-				<div class="d-flex justify-content-between col-md-2 d-none d-md-block mt-4">
-					<ul class="head d-grid gap-5 text-center mt-4 pe-5">
-						<li><a target="_blank" href="https://github.com/PeterSzlachter"><i
-									class="github fab fa-github fa-2x"></i></a></li>
-						<li><a target="_blank" href="mailto:peterszlachter@gmail.com"><i
-									class="contact far fa-envelope fa-2x"></i></a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/peter-szlachter/"><i
-									class="linkedin fab fa-linkedin fa-2x"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-10 mt-5">
-					<div class="container-fluid">
-						<div class="row row-cols-2">
-							<div class="col-md-2 col-sm-2">
-								<img src="image/PhotoCV.jpg" class="photo img-fluid" />
-							</div>
-							<div class="col-md-9 offset-md-1">
-								<h1>Peter Szlachter</h1>
-								<h2>Apprenti développeur Web</h2>
-								<p class="lieu"><i class="fas fa-map-marker-alt"
-										style="color :red; margin-right: 5px; text-shadow:none;"></i>Paris, France</p>
-							</div>
-						</div>
-					</div>
-					<div class="introduction container">
-						<p class="col-md-10 lh-sm mt-3">Dans le cadre de ma <span class="introstyle">formation Concepteur Développeur d'Applications</span>, je recherche un <span class="introstyle">contrat en alternance</span> d'un rythme
-							<span class="introstyle">3
-								semaines en entreprise</span> et <span class="introstyle">1 semaine en formation.</span>
-						</p>
-					</div>
-				</div>
-				<div class="d-flex justify-content-center mb-2">
-					<a class="buttonMail btn btn-danger" type="button" href="mailto:peterszlachter@gmail.com"><i
-							class="far fa-envelope"></i> Contactez moi !</i></a>
-				</div>
-				<div class="d-flex justify-content-center mt-5 position-absolute top-100 end-0">
-					<p class="top-link "><a href="#skill-ancre"><img src="image/noun_Arrow_682712.svg" class="arrow" /></a></p>
-				</div>
-
-			</div>
-
-		</div>
-	</header>
-
-	<section class="container pb-2 my-5">
-		<h3 class="skill-title" id="skill-ancre">Compétences</h3>
-		<div class="row row-cols-md-2">
-			<div class="skill col-md-5 mx-auto">
-				<h4><i class="fas fa-laptop-code"></i>Développement Front-end</h4>
-				<ul>
-					<li>HTML5/CSS3</li>
-					<li>Javascript</li>
-					<li>Bootstrap 5</li>
-					<li>jQuery</li>
-				</ul>
-			</div>
-			<div class="skill col-md-5 mx-auto">
-				<h4><i class="fas fa-briefcase"></i>Environnement</h4>
-				<ul>
-					<li>Visual Studio Code</li>
-					<li>Microsoft Visual Studio</li>
-					<li>Microsoft SQL Server</li>
-					<li>Merise</li>
-				</ul>
-			</div>
-			<div class="skill col-md-5 mx-auto mt-2">
-				<h4><i class="fas fa-code-branch"></i>Gestion de Projet</h4>
-				<ul>
-					<li>Méthodologie Agiles</li>
-					<li>Git</li>
-				</ul>
-			</div>
-			<div class="skill col-md-5 mx-auto mt-2">
-				<h4><i class="fas fa-code"></i>Développement .NET</h4>
-				<ul>
-					<li>C#</li>
-					<li>Programmation orientée objet</li>
-					<li>Client lourd / Client léger</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container-fluid my-5">
-			<div class="row">
-				<div class="education col-md-9 offset-md-1">
-					<h3 class="education-title">Formation</h3>
-					<ul class="container timeline">
-						<li>
-							<div class="timeline_puce me-4"><span class="date">2021</span></div>
-							<div class="timeline_content">
-								<h4>Concepteur Développeur d'Application - La Manu - Versailles</h4>
-								<ul class="skill-list">
-									<li>Consolider les langages : HTML, CSS, JS, PHP, MySQL, Merise, UML</li>
-									<li>Prise en main de frameworks PHP : CodeIgniter, Lumen, Laravel</li>
-									<li>Apprendre le développement mobile multiplateforme : HTML/CSS, Javascript, REACT Native</li>
-									<li>Création et déploiement d’une API</li>
-									<ul class="skill-info">
-										<li><i class="fas fa-long-arrow-alt-right fa-lg me-2"></i>Plus d'informations à propos de cette
-											formation sur le site de <a
-												href="https://lamanu.fr/formations/formation-concepteur-developpeur-applications/">La Manu</a>
-										</li>
-									</ul>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<div class="timeline_puce"><span class="date">2021</span></div>
-							<div class="timeline_content">
-								<h4>Formation Développeur .NET - La Manu - Versailles</h4>
-								<ul class="skill-list">
-									<li>Le C#.</li>
-									<li>Les langages du Web : HTML/CSS, Bootstrap, JavaScript, jQuery.</li>
-									<li>Connaître et savoir mettre en œuvre les méthodes agiles (Scrum).</li>
-									<li>Maîtriser l’utilisation des bases de données.</li>
-									<ul class="skill-info">
-										<li><i class="fas fa-long-arrow-alt-right fa-lg me-2"></i>Plus d'informations à propos de cette
-											formation sur le site de <a href="https://lamanu.fr/formation-poec-developpeur-net/">La Manu.</a>
-										</li>
-									</ul>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<div class="timeline_puce"><span class="date">2020</span></div>
-							<div class="timeline_content">
-								<h4>Licence 3 Physique E3A - Université Paris-Saclay - Orsay</h4>
-								<p>Parcours E3A : Electronique, Energie Electronique, Automatique.</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline_puce"><span class="date">2018</span></div>
-							<div class="timeline_content">
-								<h4>Première année cycle d'ingénieur - EPF - Montpellier</h4>
-								<p>Ecole d'ingénieur - Parcours généraliste.</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline_puce"><span class="date">2017</span></div>
-							<div class="timeline_content">
-								<h4>Classe préparatoire école d'ingénieur - EPF - Montpellier</h4>
-								<p>Classe préparatoire Ecole d'ingénieur - Parcours généraliste.</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline_puce"><span class="date">2014</span></div>
-							<div class="timeline_content">
-								<h4>Baccalauréat STI2D - Lycée Saint-Nicolas - Paris 6</h4>
-								<p>Baccalauréat STI2D : Sciences et techniques de l'industrie et du développement durable - Spécialité
-									Energie Environnement.</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container-fluid my-5">
-			<div class="row">
-				<div class="experience col-md-9 offset-md-1">
-					<h3 class="experience-title">Expérience</h3>
-					<ul class="container-fluid">
-						<li>
-							<div class="experience-bloc">
-								<h4 class="exp">Hôte d'accueil - Forest-Hill Aquaboulevard - Paris 15</h4>
-								<p class="exp-date">2016-2020</p>
-								<ul class="skill-list">
-									<li>Accueil et orientation des clients en français et en anglais.</li>
-									<li>Vente de billets en période estivale.</li>
-									<li>Gestion des sports de raquette : Réservations, vente de matériel et
-										d’abonnement.</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<div class="experience-bloc">
-								<h4 class="exp">Bénévole aide aux devoirs - Association Alizé - Montpellier</h4>
-								<p class="exp-date">2014-2016</p>
-								<ul class="skill-list">
-									<li> Aide personnalisée pour des jeunes collégiens en zone d’enseignement prioritaire.</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<div class="experience-bloc">
-								<h4 class="exp">Equipier/Cafetier - Hôtel Lyric**** - Paris 2</h4>
-								<p class="exp-date">2015</p>
-								<ul class="skill-list">
-									<li>Service cafétéria (Contact avec les clients et tâches ménagères).</li>
-									<li>Service des étages (Responsable du contrôle des chambres).</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer class="py-md-3">
-		<div class="container d-flex justify-content-evenly">
-			<a target="_blank" href="https://www.linkedin.com/in/peter-szlachter/"><i class="icon fab fa-linkedin"></i></a>
-			<a target="_blank" href="https://codepen.io/PytSz"><i class="icon fab fa-codepen"></i></a>
-			<a target="_blank" href="https://github.com/PeterSzlachter"><i class="icon fab fa-github"></i></a>
-			<a target="_blank" href="#"><i class="icon far fa-envelope"></i></a>
-		</div>
-	</footer>
+  <section class="banner" id="sec">
+    <header>
+      <a href="#" class="logo"><p>Peter</p><p>Szlachter</p></a>
+      <div id="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="content">
+      <h1>Hello, world! <br> Je suis <span>Peter Szlachter</span></h1>
+      <p>Bienvenue sur mon portail numérique. Vous pouvez retrouver mes différents projets web que j'ai réalisé ainsi que mon contact. Je recherche une alternance pour ma formation de Concepteur Developpeur Web</p>
+      <a href="#">Contactez moi</a>
+    </div>
+    <ul class="sci">
+      <li><a href="https://github.com/PeterSzlachter"><img src="images/GitHub-Mark-120px-plus.png"/></a></li>
+      <li><a href="https://www.linkedin.com/in/peter-szlachter/"><img src="images/linkedin.png"/></a></li>
+      <li><a href="mailto:peterszlachter@gmail.com"><img src="images/mail.jpg"/></a></li>
+    </ul>
+  </section>
+  <div id="navigation">
+    <ul>
+      <li><a href="CV.html">CV</a></li>      
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">FR/EN</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    function toggle(){
+      var sec = document.getElementById('sec');
+      var nav = document.getElementById('navigation');
+      sec.classList.toggle('active')
+      nav.classList.toggle('active')
+    } 
+  </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
 </html>
