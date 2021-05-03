@@ -23,6 +23,10 @@
 
 @media screen and (max-width: 900px) /* Mobile and tablet */
 {
+    .canv
+    {
+        margin-top: 50px;
+    }
     .header ul {
         display:flex;
         justify-content: space-between;

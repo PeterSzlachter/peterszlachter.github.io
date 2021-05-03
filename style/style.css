@@ -21,7 +21,6 @@ header
 }
 header .logo
 {
-  
   position: relative;
   font-weight: 700;
   color: #fff;
@@ -91,12 +90,8 @@ header .logo
 .content h1
 {
   color:#fff;
-  font-size: 2.5em; 
-}
-.content h1 span
-{
   color: #eeff00;
-  font-size: 1.2em;  
+  font-size: 2em; 
 }
 .content p
 {
@@ -244,12 +239,14 @@ header #toggle:after
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
+  transition: 0.5s
 }
 .banner.active header #toggle::after
 {
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 0.5s
 }
 
 }
