@@ -7,7 +7,7 @@
   --text-color:#fff;
   --textbis-color: #000;
   --btn-color:#fff;
-  --item-color:#FFBF00;
+  --item-color:#fff;
   --bg-color:#1F2023;
   --bgbis-color:#FFBF00;
 }
@@ -39,10 +39,10 @@ header .logo
 {
   
   position: relative;
-  font-weight: 700;
+  font-weight: 600;
   color:var(--text-color);
   text-decoration: none;
-  font-size:2.3em;
+  font-size:2.2em;
   letter-spacing:2px;
   transition: 0.6s;
 }
@@ -165,7 +165,12 @@ header .logo
   filter: invert(1);
   mix-blend-mode: difference;
 }
-
+/* .sci li a img:hover
+{
+  
+  transform: rotate(360deg);
+  transition: 1s;
+} */
 @media (max-width:880px)
 {
   header
@@ -178,7 +183,7 @@ header .logo
   }
   .banner h1
   {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
   .banner .content p,
   .banner .content a
@@ -232,6 +237,10 @@ header .logo
   display: flex;
   flex-direction: column;
 }
+header .logo
+{
+  font-size: 1.5em;
+}
 
 header #toggle:before
 {
@@ -242,6 +251,7 @@ header #toggle:before
   height: 2px;
   background:var(--item-color);
 }
+
 header #toggle:after
 {
   content:'';
@@ -265,7 +275,13 @@ header #toggle:after
   transform: translate(-50%, -50%) rotate(-45deg);
   transition: 0.5s
 }
-
+}
+@media (max-width:330px)
+{
+  .banner .content p
+  {
+    font-size:0.9em;
+  }
 }
 
 /* @media (min-width: 831px)
