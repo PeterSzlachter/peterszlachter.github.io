@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Peter Szlachter</title>
+  <link rel="stylesheet" href="style/portfolio.css"/>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"><p>Peter</p><p>Szlachter</p></a>
+    <nav id="navigation">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="CV.html">CV</a></li>      
+        <li><a href="https://github.com/PeterSzlachter">Portfolio</a></li>
+        <li><a href="mailto:peterszlachter@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="toggle" onclick="toggle()"></div>
+  </header>
+  <section>
+    <div class="portfolio">
+      <h1>Portfolio</h1>
+    <ol>
+      <li>
+        <a href="https://peterszlachter.github.io/SiteVitrineBootstrap-/">Site vitrine avec bootstrap 5</a>
+      </li>
+      <li>
+        <a href="https://peterszlachter.github.io/GuessNumberJS/">Trouver le bon nombre Vanilla JS</a>
+      </li>
+      <li>
+        <a href="https://peterszlachter.github.io/quoteGeneratorJS/">Générateur de citation - Vanilla JS</a>
+      </li>
+    </ol>
+    </div>
+  </section>
+  <script type="text/javascript">
+    function toggle(){
+      var head = document.querySelector('header')
+      var nav = document.getElementById('navigation')
+      head.classList.toggle('active')
+      nav.classList.toggle('active')
+    } 
+  </script>
+</body>
+</html>
