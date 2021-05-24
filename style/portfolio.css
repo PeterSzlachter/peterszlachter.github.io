@@ -104,7 +104,7 @@ section ol li
 {
   padding: 10px 0px; 
 }
-section ol a 
+section ol li a 
 {
   color: var(--main-color);
   font-weight: 500;
@@ -213,5 +213,9 @@ section h1
   header.active .logo
   {
     transform: translateX(-250px);
+  }
+  section ol 
+  {
+  font-size:1.3em;
   }
 }
